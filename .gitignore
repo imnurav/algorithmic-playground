@@ -1,0 +1,66 @@
+###############################
+# C++ BUILD ARTIFACTS
+###############################
+# Ignore all compiled binaries
+index
+*/index
+**/index
+
+# Common compiler output files
+*.out
+*.exe
+*.o
+*.obj
+*.gch
+
+# Temporary test executables
+a.out
+*.out
+*.class
+
+###############################
+# OS-SPECIFIC FILES
+###############################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+###############################
+# EDITOR / IDE RELATED
+###############################
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (CLion etc.)
+.idea/
+cmake-build-*/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+###############################
+# SCRIPT OUTPUT / TEMP FILES
+###############################
+# Script-generated binaries
+/tmp/
+temp/
+cache/
+
+###############################
+# BACKUP FILES
+###############################
+*.bak
+*.tmp
+*.swp
+*.swo
+
+###############################
+# LOG FILES
+###############################
+*.log
