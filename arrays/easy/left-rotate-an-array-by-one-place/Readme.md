@@ -1,0 +1,43 @@
+# Left Rotate an array by one place
+
+Given an integer array nums, rotate the array to the left by one.
+
+Note: There is no need to return anything, just modify the given array.
+
+Examples:
+Input: nums = [1, 2, 3, 4, 5]
+
+Output: [2, 3, 4, 5, 1]
+
+Explanation:
+
+# Left Rotate an array by one place
+
+Given an integer array nums, rotate the array to the left by one.
+
+Note: There is no need to return anything, just modify the given array.
+
+Examples:
+Input: nums = [1, 2, 3, 4, 5]
+
+Output: [2, 3, 4, 5, 1]
+
+Explanation:
+
+Initially, nums = [1, 2, 3, 4, 5]
+
+Rotating once to left -> nums = [2, 3, 4, 5, 1]
+
+Input: nums = [-1, 0, 3, 6]
+
+Output: [0, 3, 6, -1]
+
+Explanation:
+
+Initially, nums = [-1, 0, 3, 6]
+
+Rotating once to left -> nums = [0, 3, 6, -1]
+
+Constraints:
+1 <= nums.length <= 105
+-104 <= nums[i] <= 104
