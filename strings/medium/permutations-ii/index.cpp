@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-void backtrack(vector<int> &nums, vector<bool> &used,
-               vector<int> &current, vector<vector<int>> &result)
+void backtrack(vector<int> &nums, vector<bool> &used, vector<int> &current,
+               vector<vector<int>> &result)
 {
     // If current permutation is complete
     if (current.size() == nums.size())
@@ -13,9 +13,6 @@ void backtrack(vector<int> &nums, vector<bool> &used,
     for (int i = 0; i < nums.size(); i++)
     {
         if (used[i])
-            continue;
-
-        if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])
             continue;
 
         // Choose
@@ -35,7 +32,7 @@ vector<vector<int>> permute(vector<int> &nums)
     vector<vector<int>> result;
     vector<int> current;
     vector<bool> used(nums.size(), false);
-    sort(nums.begin(), nums.end());
+
     backtrack(nums, used, current, result);
     return result;
 }
