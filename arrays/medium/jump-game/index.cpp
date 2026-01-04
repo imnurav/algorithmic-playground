@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+bool canJump(vector<int> &nums)
+{
+    int n = nums.size();
+    int max_reach = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (i > max_reach)
+        {
+            return false;
+        }
+        max_reach = max(max_reach, i + nums[i]);
+        if (max_reach >= n - 1)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+int main()
+{
+    vector<int> nums = {2, 3, 1, 1, 4};
+    bool result = canJump(nums);
+    cout << "Can Jump or Not " << result;
+    return 0;
+}
