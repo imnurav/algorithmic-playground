@@ -20,6 +20,7 @@ int largestMagicSquare(vector<vector<int>> &grid)
             diag2[i + 1][j] = diag2[i][j + 1] + grid[i][j];
         }
     }
+    
     int maxK = min(m, n);
 
     for (int k = maxK; k >= 2; k--)
