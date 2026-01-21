@@ -133,3 +133,5 @@ Contributing
 License & Contact
 
 This repository is available under the MIT License — add `LICENSE` if you want an explicit license file.
+
+Varun Kumar
